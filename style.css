@@ -8,67 +8,85 @@
 /* Body and General Styling */
 body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background-color: #fff9db; /* Light yellow background */
+  background-color: #f4faff;
   color: #333;
   line-height: 1.6;
 }
 
-/* Header */
-header {
-  background-color: #ffdd00; /* Bright yellow */
+/* Header with Background Image */
+.header-image {
+  background: url("images/project1.jpg") no-repeat center center/cover;
+  height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.overlay {
+  background-color: rgba(0, 51, 102, 0.6); /* semi-transparent dark blue */
+  width: 100%;
   text-align: center;
-  padding: 40px 20px;
-  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  padding: 30px 20px;
 }
 
 .logo {
-  width: 100px;
-  margin-bottom: 20px;
+  width: 80px;
+  margin-bottom: 15px;
 }
 
 header h1 {
-  font-size: 2.5rem;
-  color: #222;
+  font-size: 2.2rem;
+  color: #fff;
   margin-bottom: 10px;
 }
 
 header p {
-  font-size: 1.2rem;
-  color: #444;
+  font-size: 1.1rem;
+  color: #ddd;
 }
 
-/* Decorative Images Section */
-.decorative-images {
+/* Projects Section */
+.projects {
+  padding: 40px 20px;
+  background-color: #e6f0ff;
+  text-align: center;
+}
+
+.projects h2 {
+  font-size: 2rem;
+  color: #003366;
+  margin-bottom: 20px;
+}
+
+.project-gallery {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   flex-wrap: wrap;
-  padding: 30px 10px;
-  background-color: #fff6b0;
+  gap: 20px;
 }
 
-.decorative-images img {
+.project-gallery img {
   width: 300px;
-  height: auto;
-  margin: 10px;
   border-radius: 10px;
   box-shadow: 2px 4px 12px rgba(0,0,0,0.2);
   transition: transform 0.3s ease;
 }
 
-.decorative-images img:hover {
+.project-gallery img:hover {
   transform: scale(1.05);
 }
 
 /* About Section */
 .about {
   padding: 40px 20px;
-  background-color: #fff2a8;
+  background-color: #ffffff;
   text-align: center;
 }
 
 .about h2 {
   font-size: 2rem;
-  color: #b58900;
+  color: #003366;
   margin-bottom: 20px;
 }
 
@@ -81,13 +99,13 @@ header p {
 /* Contact Section */
 .contact {
   padding: 40px 20px;
-  background-color: #fff6c1;
+  background-color: #f0f8ff;
   text-align: center;
 }
 
 .contact h2 {
   font-size: 2rem;
-  color: #b58900;
+  color: #003366;
   margin-bottom: 20px;
 }
 
@@ -97,7 +115,7 @@ header p {
 }
 
 .contact a {
-  color: #333;
+  color: #003366;
   text-decoration: none;
 }
 
@@ -107,10 +125,9 @@ header p {
 
 /* Footer */
 footer {
-  background-color: #ffdd00;
+  background-color: #003366;
   text-align: center;
   padding: 20px;
   font-size: 0.9rem;
-  color: #222;
-  box-shadow: 0 -2px 6px rgba(0,0,0,0.1);
+  color: #fff;
 }
